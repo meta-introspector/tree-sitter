@@ -48,7 +48,7 @@ wasm = ["std", "wasmtime-c-api"]
 [dependencies]
 regex = { version = "1.11.2", default-features = false, features = ["unicode"] }
 regex-syntax = { version = "0.8.6", default-features = false }
-tree-sitter-language.workspace = true
+#tree-sitter-language.workspace = true
 streaming-iterator = "0.1.9"
 
 [dependencies.wasmtime-c-api]
@@ -60,8 +60,8 @@ features = ["cranelift", "gc-drc"]
 
 [build-dependencies]
 bindgen = { version = "0.72.0", optional = true }
-cc.workspace = true
-serde_json.workspace = true
+#cc.workspace = true
+#serde_json.workspace = true
 
 [lib]
 path = "binding_rust/lib.rs"
